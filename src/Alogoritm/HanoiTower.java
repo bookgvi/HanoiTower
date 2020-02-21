@@ -13,11 +13,11 @@ public class HanoiTower implements Execute<Object> {
     private void makeHanoi(int discNum, String from, String inter, String to) {
         this.iterCount++;
         if (discNum == 1) {
-//            System.out.println("Disc 1 from " + from + " to " + to); // from --> to
+            System.out.println("Disc 1 from " + from + " to " + to); // from --> to
             return;
         }
         makeHanoi(discNum - 1, from, to, inter); // from --> inter
-//        System.out.println("Disk " + discNum + " from " + from + " to " + to);
+        System.out.println("Disk " + discNum + " from " + from + " to " + to);
 
         makeHanoi(discNum - 1, inter, from, to);  // inter --> to
     }
